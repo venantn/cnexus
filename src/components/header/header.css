@@ -1,0 +1,136 @@
+.cnexus__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.cnexus__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 2rem 6rem;
+
+    
+}
+.cnexus__header-title{
+    align-items: center;
+    
+    
+}
+
+
+.cnexus__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 85px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-top: 25px;
+    padding-bottom: 90px;
+    
+
+}
+.cnexus__header-content h2 {
+    font-family: var(--font-family);
+    font-weight: 650;
+    font-size: 65px;
+    line-height: 95px;
+    
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    
+}
+
+.cnexus__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    
+
+}
+
+
+
+
+
+.cnexus__header-image {
+    width:100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cnexus__header-image img {
+    width: 100%;          /* Make the image span the full width of its container */
+    height: 450px;        /* Set a fixed height for the hero image */
+    object-fit: cover;    /* Ensure the image covers the entire area */
+    border-radius: 8px;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .cnexus__header {
+        flex-direction: column;
+    }
+
+    .cnexus__header-content {
+        margin: 0 0 1rem;
+    }
+    .cnexus__header-content h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .cnexus__header-content p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    .cnexus__header-content h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .cnexus__header-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    .cnexus__header-content h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .cnexus__header-content p {
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+
+    .cnexus__header-content {
+        padding: 2rem 2rem;
+    
+        
+    }
+    .cnexus__header-image img {
+        width: 100%;          /* Make the image span the full width of its container */
+        height: 300px;        /* Set a fixed height for the hero image */
+        object-fit: cover;    /* Ensure the image covers the entire area */
+        border-radius: 8px;
+        
+    }
+
+}

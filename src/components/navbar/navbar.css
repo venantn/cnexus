@@ -1,0 +1,132 @@
+.cnexus__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.cnexus__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.cnexus__navbar-links_logo {
+    margin-right: 2rem;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+.cnexus__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.cnexus__navbar-links_container p,
+.cnexus__navbar-sign p,
+.cnexus__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: var(--font-family);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.cnexus__navbar-links_container p:hover{
+    color: rgba(255,174,66);
+}
+
+
+.cnexus__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+
+
+.cnexus__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 2px 24px 24px rgba(0,0, 0.8);
+}
+
+.cnexus__navbar-menu_container p {
+    margin: 1rem 0;
+    font-family: var(--font-family);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+}
+.cnexus__navbar-menu_container p:hover{
+    color: rgba(255,174,66);
+}
+
+.cnexus__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .cnexus__navbar-links_container {
+        display: none;
+    }
+
+    .cnexus__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cnexus__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cnexus__navbar {
+        padding: 2rem 2rem;
+    }
+
+    .cnexus__navbar-sign {
+        display: none;
+    }
+
+    .cnexus__navbar-menu_container {
+        top: 20px;
+    }
+
+    .cnexus__navbar-menu_container-links-sign {
+        display: block;
+    }
+}

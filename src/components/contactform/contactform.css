@@ -1,0 +1,79 @@
+.ContactForm {
+    margin-top: 50px; 
+    width:100%;
+    
+  }
+  
+  .contactForm {
+    padding: 20px; /* Padding around the form */
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+  
+    
+  }
+  
+  .formRow {
+    margin-bottom: 35px; /* Margin between form rows */
+    
+  }
+  
+  .formInput {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Border color for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    
+  }
+  
+  .errorMessage {
+    color: red; /* Color for error messages */
+    font-size: 14px; /* Font size for error messages */
+    padding-bottom: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    
+  }
+  
+  .submit-btn {
+    width: 100%; /* Full width for submit button */
+    padding: 10px; /* Padding for submit button */
+    border: none; /* No border for submit button */
+    border-radius: 5px; /* Rounded corners for submit button */
+    background-color: #007bff; /* Background color for submit button */
+    color: #fff; /* Text color for submit button */
+    cursor: pointer; /* Cursor style for submit button */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #ccc; /* Background color for disabled submit button */
+    cursor: not-allowed; /* Cursor style for disabled submit button */
+  }
+  
+  .alert {
+    padding: 15px; /* Padding for alert message */
+    border-radius: 5px; /* Rounded corners for alert message */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+  }
+  
+  .alert-dismissible {
+    position: relative; /* Relative positioning for close button */
+  }
+  
+  .btn-close {
+    position: absolute; /* Absolute positioning for close button */
+    top: 0; /* Position close button at the top */
+    right: 0; /* Position close button at the right */
+    padding: 10px; /* Padding for close button */
+  }
+  

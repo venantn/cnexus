@@ -1,0 +1,114 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.cnexus__about {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cnexus__about-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    padding: 2rem 6rem;
+
+    
+}
+
+
+.cnexus__about-content h1 {
+    font-family: var(--font-family);
+    font-weight: 625;
+    font-size: 45px;
+    line-height: 75px;
+    letter-spacing: 0.5px;
+    margin-bottom: 29px;
+}
+.cnexus__about-cat {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Create two equal columns */
+    gap: 35px; /* Add space between columns */
+    align-items: stretch;
+
+}
+.cnexus__about-content p {
+    font-family: var(--font-family);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    background-color:rgba(173, 216, 230, 0.45);
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+}
+.cnexus__about-content p.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move back to original position */
+}
+
+@media screen and (max-width: 950px) {
+    .cnexus__about {
+        flex-direction: column;
+    }
+
+    .cnexus__about-content {
+        margin-top: 1rem;
+    }
+
+    .cnexus__about-content p {
+        padding: 30px 30px 30px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+        background-color:rgba(173, 216, 230, 0.45);
+    }
+
+    .cnexus__about-cat {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cnexus__about-content h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .cnexus__about-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    .cnexus__about-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .cnexus__about-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .cnexus__about-content {
+        padding: 2rem 2rem;
+    }
+}

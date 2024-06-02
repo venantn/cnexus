@@ -1,0 +1,102 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .cnexus__service {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+  }
+  
+  .cnexus__service.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move back to original position */
+  }
+  
+
+
+.cnexus__services {
+    display: flex;
+    flex-direction: row;  
+}
+.cnexus__services-cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 35px; /* Add space between columns */
+    align-items: stretch;
+    
+}
+
+.cnexus__services-content {
+    padding: 2rem 6rem;
+    flex: 1;
+    display: flex;
+    
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+
+.cnexus__services-content h1 {
+    font-family: var(--font-family);
+    font-weight: 650;
+    font-size: 45px;
+    line-height: 75px;
+    letter-spacing: 0.5px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .cnexus__services {
+        flex-direction: column;
+    }
+
+    .cnexus__services-cat {
+        grid-template-columns: 1fr; /* Two columns for medium screens */
+    }
+
+    .cnexus__services-content {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cnexus__services-cat {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
+@media screen and (max-width: 750px) {
+    .cnexus__services-content h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .cnexus__services-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    .cnexus__services-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .cnexus__services-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cnexus__services-content  {
+        padding: 2rem 2rem;
+    }
+}
